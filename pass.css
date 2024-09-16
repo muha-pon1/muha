@@ -1,0 +1,28 @@
+.block{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+
+}
+/* hover */
+.block1{
+    width: 0px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+  
+}
+.block1_active{
+    width: 200px;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.text{
+    margin-left: -500px;
+
+    transition: all 0.5s ease-in-out;
+}
+.text_active{
+    margin-left: 0px;
+    transition: all 0.5s ease-in-out;
+}
