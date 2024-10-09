@@ -31,3 +31,83 @@
 .let{
     border: 1px solid #000;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div{
+margin-left: 45%;
+margin-top: 10px;
+
+}
+.stick-1{
+    width: 100px;
+    height: 7px;
+    background-color: black;
+    transform: rotate(45deg); 
+    margin-top: -6px;
+    margin-left: -11px;
+}
+.stick-2{
+    width: 100px;
+    height: 7px;
+    background-color: black;
+    transform: rotate(-45deg);
+    margin-top: 132px;
+    margin-left: -82px;
+}
+.stick-3{
+    width: 100px;
+    height: 7px;
+    background-color: black;
+    transform: rotate(-45deg);   
+    margin-left: -83px;
+    margin-top: -15px;
+}
+.stick-4{
+    width: 100px;
+    height: 7px;
+    background-color: black;
+    transform: rotate(45deg); 
+    margin-top: -105px;
+    margin-left: -13px;
+}
+.stick-5{
+    width: 7px;
+    height: 150px;
+    background-color: black;
+}
+.stick-6{
+    border-radius: 50%;
+    border: 5px solid black;
+    background-color: transparent;
+    height: 70px;
+    width: 70px;
+    margin-left: -35px;
+}
+.stick-7{
+    width: 7px;
+    height: 35px;
+    background-color: black;
+margin-top: -7px;
+}
+.stick-8{
+    width: 200px;
+    height: 7px;
+    background-color: black;
+    margin-left: -48px;
+}
+.stick-9{
+    width: 7px;
+    height: 350px;
+    background-color: black;
+    margin-left: 145px;
+    margin-top: -295px;
+}
+.stick-10{
+    width: 270px;
+    height: 7px;
+    background-color: black;
+    margin-left: -70px;
+}
