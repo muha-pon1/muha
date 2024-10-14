@@ -111,3 +111,9 @@ margin-top: -7px;
     background-color: black;
     margin-left: -70px;
 }
+.hide{
+    display: none;
+}
+.hidechel{
+    opacity: 0.2;
+}
