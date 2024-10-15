@@ -7,7 +7,7 @@ creatingBlock(alphabetBox, alphabet,"alphabetLetter", "s", i)
 }
 
 const wordBox = document.querySelector('.word')
-const wordArray = ["гусь","бобр","суслик","макака","банан"];
+const wordArray = ["ГУСАК","БОБЕР","СУСЛИК","МАКАКА","БАНАН"];
 const chelParts = document.querySelectorAll(".hidechel")
 console.log(chelParts)
 let randomindex = Math.floor(Math.random()*5);
@@ -17,6 +17,7 @@ let WORD = wordArray[randomindex];
 for (let i = 0; i < WORD.length; i++) {
 creatingBlock(wordBox, WORD, "let", "hide", i)
 }
+const wordLetters = document.querySelectorAll(".let")
 const alpabetButtons = document.querySelectorAll(".alphabetLetter")
 alpabetButtons.forEach((button) => {
 button.addEventListener("click", ()=>{
@@ -27,6 +28,9 @@ button.addEventListener("click", ()=>{
       chelParts[misstakes].classList.remove('hidechel')
       misstakes++
       console.log(misstakes)
+    }else{
+       console.log('asdasdasd')
+       wordLetters[WORD.indexOf(button.textContent)].classList.remove('hide')
     }
     });
 });
