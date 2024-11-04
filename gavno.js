@@ -5,17 +5,24 @@ for (let i = 0; i < alphabet.length; i++) {
 
 creatingBlock(alphabetBox, alphabet,"alphabetLetter", "s", i)
 }
-
 const wordBox = document.querySelector('.word')
-const wordArray = ["ГУСАК","БОБЕР","СУСЛИК","МАКАКА","БАНАН"];
+const wordArray = ["ГУСАК","БОБЕР","СУСЛИК","МАКАКА","БАНАН","ПИЦЦА"];
 const chelParts = document.querySelectorAll(".hidechel")
+const pop_up = document.querySelector(".pop_up")
+const exitButton = document.querySelector("#exitButton")
+
+exitButton.addEventListener("click", ()=>{
+  location.reload();
+})
+
 console.log(chelParts)
-let randomindex = Math.floor(Math.random()*5);
+let randomindex = Math.floor(Math.random()*6);
 let misstakes = 0
 
 let WORD = wordArray[randomindex];
 for (let i = 0; i < WORD.length; i++) {
 creatingBlock(wordBox, WORD, "let", "hide", i)
+creatingBlock(wordBox, '', "cont", "ooo", i)
 }
 const wordLetters = document.querySelectorAll(".let")
 const alpabetButtons = document.querySelectorAll(".alphabetLetter")
@@ -28,12 +35,24 @@ button.addEventListener("click", ()=>{
       chelParts[misstakes].classList.remove('hidechel')
       misstakes++
       console.log(misstakes)
+      if ( misstakes >= 10) {
+        pop_up.classList.remove('hide')
+      }
     }else{
-       console.log('asdasdasd')
-       wordLetters[WORD.indexOf(button.textContent)].classList.remove('hide')
+       FLIW(WORD, button.textContent)
     }
     });
 });
+function FLIW(array, letterToFind){
+  for (let i = 0; i < array.length; i++) { 
+    if (array[i] == letterToFind){
+        wordLetters[i].classList.remove("hide")
+        wordLetters[i].nextElementSibling.classList.add("hide")
+    }
+
+  }
+}
+
 
 function creatingBlock(parentBlock, slovo, newClass, secondClass, i){
   const div = document.createElement("div");
