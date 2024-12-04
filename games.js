@@ -1,8 +1,8 @@
-
 const cardsBlocks = document.querySelectorAll('.card');
 const gameboard = document.querySelector('.gameboard');
 const cards = []
 let amount = 8 
+let misstakes = 0
 const wordsForCard = ["🌈", "🌹", "😁", "🎈"]
 
 
@@ -50,15 +50,12 @@ setTimeout(()=>{
               thisCard.querySelector(".card__front").classList.remove("active__front")
               thisCard.querySelector(".card__back").classList.remove("active__back")
             })
-    
+            // misstakes++
+            // console.log(misstakes)
         }
-        cards.lenght = 0
+        cards.length = 0
     }
 
 },1000)
- //   const card = mainCard.querySelector('.card__back')
- //console.log(card.textContent)
-//console.log(cards[0])
-//console.log(cards[1])
-// }
+
 }
