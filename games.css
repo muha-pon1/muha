@@ -20,7 +20,7 @@ body{
 
 }
 
-.card_front{
+.card__front{
     border-radius: 8px;
     z-index: 1;
     position: relative;
@@ -30,7 +30,7 @@ body{
     backface-visibility: hidden;
     transition: transform .3s linear;
 }
-.card_back{
+.card__back{
     z-index: 0;
     position: absolute;
     top: 0;
@@ -45,11 +45,11 @@ body{
 }
 
 
-.active_back{
+.active__back{
   transform: rotateY(0deg);
   z-index: 2;
 }
-.active_front{
+.active__front{
     transform: rotateY(180deg);
     z-index: -1;
 }
