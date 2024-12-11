@@ -12,6 +12,7 @@
     position: absolute;
     bottom: 50px;
     left: 100px;
+    transition: bottom 0.4s ease-in-out;
 }
 .kaktus{
     height: 80px;
@@ -20,4 +21,5 @@
     position: absolute;
     bottom: 50px;
     right: 0;
+    transition: right 0.4s linear;
 }
