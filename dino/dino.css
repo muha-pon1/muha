@@ -1,0 +1,23 @@
+.korobka{
+    width: 800px;
+    height: 600px;
+    border: 2px solid #000;
+    margin: auto;
+    position: relative;
+}
+.dino{
+    height: 100px;
+    width: 50px;
+    background-color: #000;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+.kaktus{
+    height: 80px;
+    width: 10px;
+    background-color: #018007;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
